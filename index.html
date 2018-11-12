@@ -10,6 +10,7 @@
 <script src="ex06-7.js"></script>
 <script src="ex06-8.js"></script>
 <script src="ex06-9.js"></script>
+<script src="ex06-10.js"></script>
 </head>
 
 
@@ -43,6 +44,20 @@
   <div id="txt1" >
     <input type="button" value="テキストの変更"onclick="txtchange1();">
     城西大学</div>
+  
+  <div id="image1">
+    <input type="button"value="画像の変更"
+           onclick="imgchange1();">
+    <img src='./image/josai.png'id="logo"alt="Josai Logo">
+  </div>
+  
+  <h1>タイマーイベントによる実行6-10</h1>
+  <form name="timer">
+    <input type="button" value="スタート"
+           onclick="startfuc()">
+    <br>
+    <input type="text" name="moji" size="30" value="">
+  </form>
     
   
 </body>
