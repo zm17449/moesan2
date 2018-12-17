@@ -11,7 +11,9 @@
 <script src="ex06-8.js"></script>
 <script src="ex06-9.js"></script>
 <script src="ex06-10.js"></script>
-  <script src="ex06-11.js"></script>
+<script src="ex06-11.js"></script>
+<script src="ex06-12.js"></script>  
+<script src="ex06-13.js"></script>  
 <script src="ex09-2.js"></script>  
 </head>
 
@@ -56,7 +58,7 @@
   <h1>タイマーイベントによる実行6-10</h1>
   <form name="timer">
     <input type="button" value="スタート"
-           onclick="startfuc()">
+           onclick="startfnc()">
     <br>
     <input type="text" name="moji" size="30" value="">
   </form>
@@ -71,7 +73,21 @@
     <br>
     <input type="text" name="moji2" size="30" value="">
   </form>
+  <h1>タイマーイベントによる実行6-12</h1>
+  <form name="timer3">
+  <input type="button" value="3秒で変更" onclick="setTimeout('mes()',3000)">
+  <img src='./image/poor.jpg'id="logo2" alt="poor Logo">
+  </form>
   
+  <h1>タイマーイベントによる実行の応用6-13</h1>
+  <div id="back">
+  <input type="button" value="変更後3秒でまた戻る" onclick="ChangeImageAndBack()">
+  <img src= './image/poor.jpg' id="img13" alt="poor Logo" class="imagechange">  
+  </div>
+       
+        
+  
+    
   <h1>javascriptの変数とデバッカを理解09-2</h1>
   <p>下のボタンを押すと数字が表示されます</p>
   <p><input type="button"value="実行ボタン"onclick="addCount()"></p>
